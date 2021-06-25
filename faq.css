@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /******************* navbar  **********************/
+  nav {
+    background: linear-gradient(
+      180deg,
+      rgba(78, 149, 37, 0.13),
+      rgba(78, 149, 37, 0.07)
+    );
+    flex: 0 0 auto;
+  }
+
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: black;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  nav ul li a:hover{
+      text-decoration: none;
+      color: #4e9525;
+  }
+  
+  nav ul li:last-of-type a:last-of-type {
+    background: #4e9525;
+    color: #ffffff;
+  }
+  
+  #nav-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 10px;
+  }
+  
+  #menu-btn {
+    padding: 5px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  #links {
+    display: none;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    height: 5px;
+    width: 35px;
+    background: rgba(78, 149, 37, .4);
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .turn .bar1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  .turn .bar2 {
+    opacity: 0;
+  }
+  
+  .turn .bar3 {
+    transform: rotate(45deg) translate(-7px, -8px);
+  }
+  
+  @media screen and (min-width: 992px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+    #menu-btn {
+      display: none;
+    }
+    nav ul {
+      display: flex !important;
+      justify-self: flex-end;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      padding: 0 10px;
+    }
+    nav ul a {
+      text-align: center;
+    }
+    #nav-top {
+      padding: 10px;
+    }
+    .nav-active {
+      border-bottom: 0.2rem solid #4e9525;
+    }
+  }
+  
+  /* FAQ styling */
+.faqs{
+    color: #4E9525;
+    text-align: center;
+    margin: 2rem auto;
+}
+@media screen and (max-width: 760px) {
+    .faqs{
+        font-size: 1rem;
+    }
+}
+
+ /* FAQ styling */
+ .faqs{
+    color: #4E9525;
+    text-align: center;
+    margin: 2rem auto;
+}
+@media screen and (max-width: 760px) {
+    .faqs{
+        font-size: 1rem;
+    }
+}
+
+/* Accordion styles */
+section{
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+}
+ .panel-group{
+    /* width: 100%; */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.panel{
+    background-color: #ffffff;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem auto;  
+    box-shadow: .2rem .5px .2rem rgb(79, 248, 121);
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e072"; /* "play" icon */
+    float: right;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #454444;
+}
+
+/* Faq pix stylings */
+.faq-pix{
+    margin-bottom: 2rem;
+}
+
+/* Footer stylings */
+.footer {
+    background: rgba(78, 149, 37, .4);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    margin: 0 auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .footer-bottom {
+    align-self: center;
+    color: #4e9525;
+    font-size: 16px;
+  }
+  
+  .first-item,
+  .second-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+    margin-bottom: 25px;
+  }
+  
+  .first-item p {
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+  
+  .mail-link {
+    color: #4e9525;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  
+  .phone-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  
+  .social-link {
+    margin-right: 10px;
+  }
+  
+  .second-item-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 0;
+  }
